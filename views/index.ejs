@@ -1,0 +1,134 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main-content">
+  <section class="hero">
+    <div class="hero-text" data-animate>
+      <p class="eyebrow" data-i18n="heroEyebrow"></p>
+      <h1 data-i18n="heroTitle"></h1>
+      <p class="lead" data-i18n="heroIntro"></p>
+      <div class="hero-actions">
+        <a class="btn btn-call call-link" href="#" data-i18n="callLabel"></a>
+        <a class="btn btn-ghost" href="#map">Find us</a>
+      </div>
+      <p class="note" data-i18n="heroNote"></p>
+    </div>
+    <div class="hero-art" data-animate>
+      <div class="orb"></div>
+      <div class="scoop"></div>
+      <div class="tile"></div>
+      <div class="stripe"></div>
+    </div>
+  </section>
+
+  <section class="highlights" data-animate>
+    <div class="card">
+      <h3 data-i18n="highlights.0.title"></h3>
+      <p data-i18n="highlights.0.desc"></p>
+    </div>
+    <div class="card">
+      <h3 data-i18n="highlights.1.title"></h3>
+      <p data-i18n="highlights.1.desc"></p>
+    </div>
+    <div class="card">
+      <h3 data-i18n="highlights.2.title"></h3>
+      <p data-i18n="highlights.2.desc"></p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="section-head" data-animate>
+      <h2 data-i18n="menuTitle"></h2>
+      <p data-i18n="menuIntro"></p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card" data-animate>
+        <h3 data-i18n="menuPage.tabs.iceCaffe"></h3>
+        <ul>
+          <li>Affogato Garda</li>
+          <li>Ice Latte Vanilla</li>
+          <li>Cold Brew Tiramisu</li>
+        </ul>
+      </div>
+      <div class="menu-card" data-animate>
+        <h3 data-i18n="menuPage.tabs.gelato"></h3>
+        <ul>
+          <li>Pistazie Bronte</li>
+          <li>Stracciatella</li>
+          <li>Haselnuss Gianduja</li>
+        </ul>
+      </div>
+      <div class="menu-card" data-animate>
+        <h3 data-i18n="menuPage.tabs.desserts"></h3>
+        <ul>
+          <li>Spaghetti Ice Classic</li>
+          <li>Waffel mit Gelato</li>
+          <li>Waffel mit Fruechten</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <div class="section-head" data-animate>
+      <h2 data-i18n="storyTitle"></h2>
+      <p data-i18n="storyIntro"></p>
+    </div>
+    <div class="story-grid" data-animate>
+      <div class="story-item">
+        <span>01</span>
+        <p data-i18n="storyItems.0"></p>
+      </div>
+      <div class="story-item">
+        <span>02</span>
+        <p data-i18n="storyItems.1"></p>
+      </div>
+      <div class="story-item">
+        <span>03</span>
+        <p data-i18n="storyItems.2"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="opening-hours" aria-labelledby="opening-hours-title">
+    <div class="section-head" data-animate>
+      <p class="eyebrow" data-i18n="openingHoursEyebrow"></p>
+      <h2 id="opening-hours-title" data-i18n="openingHoursTitle"></h2>
+      <p class="note" data-i18n="hoursNote"></p>
+    </div>
+    <div class="hours-grid" data-animate>
+      <% hoursCards.forEach((entry) => { %>
+        <article class="day-card <%= entry.isClosed ? 'closed' : '' %>">
+          <h3><%= entry.day %></h3>
+          <% if (entry.isClosed) { %>
+            <p data-i18n="openingClosed"></p>
+          <% } else { %>
+            <% entry.times.forEach((slot) => { %>
+              <p><%= slot %></p>
+            <% }) %>
+          <% } %>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section id="map" class="map">
+    <div class="section-head" data-animate>
+      <h2 data-i18n="visitTitle"></h2>
+      <p><%= site.address %></p>
+      <p class="note" data-i18n="hoursNote"></p>
+    </div>
+    <div class="map-frame" data-animate>
+      <iframe
+        title="Google Maps"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="<%= site.mapUrl %>"
+      ></iframe>
+    </div>
+  </section>
+</main>
+
+<script src="/js/hero.js"></script>
+<%- include('partials/footer') %>

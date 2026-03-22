@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main-content" class="page-shell menu-page">
+  <section class="menu-page-intro">
+    <p class="eyebrow" data-i18n="menuPage.eyebrow"></p>
+    <h1 data-i18n="menuPage.title"></h1>
+    <p data-i18n="menuPage.intro"></p>
+  </section>
+
+  <div class="menu-tabs" role="tablist" aria-label="Speisekategorien">
+    <button class="tab-btn active" data-target="iceCaffe" role="tab" aria-selected="true" data-i18n="menuPage.tabs.iceCaffe"></button>
+    <button class="tab-btn" data-target="gelato" role="tab" aria-selected="false" data-i18n="menuPage.tabs.gelato"></button>
+    <button class="tab-btn" data-target="desserts" role="tab" aria-selected="false" data-i18n="menuPage.tabs.desserts"></button>
+  </div>
+
+  <% const categories = ["iceCaffe", "gelato", "desserts"]; %>
+  <% categories.forEach((key, idx) => { %>
+    <section class="menu-section tab-content <%= idx === 0 ? 'active' : '' %>" id="<%= key %>" role="tabpanel" <%= idx !== 0 ? 'hidden' : '' %>>
+      <h2 data-i18n="menuPage.tabs.<%= key %>"></h2>
+      <% menu[key].forEach(item => { %>
+        <div class="menu-item">
+          <div class="menu-header">
+            <span class="menu-title"><%= item.name %></span>
+            <span class="menu-price"><%= item.price %></span>
+          </div>
+          <div class="menu-ingredients"><%= item.desc %></div>
+        </div>
+      <% }) %>
+    </section>
+  <% }) %>
+</main>
+
+<script src="/js/tabs.js"></script>
+<%- include('partials/footer') %>

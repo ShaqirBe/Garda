@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="footer-brand">
+    <strong><%= site.name %></strong>
+    <span><%= site.address %></span>
+  </div>
+
+  <nav>
+    <a href="/kontakt" data-i18n="nav.contact"></a>
+    <span>|</span>
+    <a href="/impressum" data-i18n="nav.legal"></a>
+  </nav>
+</footer>
+
+<a href="tel:<%= site.phone %>" class="call-button" data-i18n="callLabel"></a>
+
+<div id="cookie-notice" class="cookie-notice">
+  <p>Diese Website verwendet nur technisch notwendige Cookies.</p>
+  <button id="cookie-accept" type="button">OK</button>
+</div>
+
+<script>
+  window.__SITE_COPY__ = <%- JSON.stringify(site.copy) %>;
+  window.__SITE_PHONE__ = <%- JSON.stringify(site.phone) %>;
+  window.__SITE_PHONE_DISPLAY__ = <%- JSON.stringify(site.phoneDisplay) %>;
+</script>
+<script src="/js/i18n.js"></script>
+<script src="/js/cookie.js"></script>
+</body>
+</html>

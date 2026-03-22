@@ -1,0 +1,30 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main-content" class="page-shell page">
+  <h1 data-i18n="contactPage.title"></h1>
+  <p data-i18n="contactPage.intro"></p>
+
+  <div class="contact-grid">
+    <div>
+      <h2 data-i18n="contactPage.addressLabel"></h2>
+      <p><%= site.address %></p>
+    </div>
+    <div>
+      <h2 data-i18n="contactPage.phoneLabel"></h2>
+      <p><a href="tel:<%= site.phone %>"><%= site.phoneDisplay %></a></p>
+    </div>
+  </div>
+
+  <div class="map-frame">
+    <iframe
+      title="Google Maps"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="<%= site.mapUrl %>"
+    ></iframe>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

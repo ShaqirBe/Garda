@@ -1,0 +1,15 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main-content" class="page-shell page">
+  <h1 data-i18n="legalPage.title"></h1>
+  <p data-i18n="legalPage.intro"></p>
+
+  <p>
+    <strong><%= site.name %></strong><br />
+    <%= site.address %><br />
+    Tel: <a href="tel:<%= site.phone %>"><%= site.phoneDisplay %></a>
+  </p>
+</main>
+
+<%- include('partials/footer') %>

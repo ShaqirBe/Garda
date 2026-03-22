@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <% const metaTitle = pageTitle || `${site.name} - Gelato & Ice Caffe`; %>
+  <% const metaDescription = pageDescription || "Familiengemachtes Gelato, Ice Caffe, Spaghetti Ice und Waffeln in Rimbeck / Scherfede."; %>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2f1b12" />
+  <meta name="robots" content="index, follow" />
+
+  <title><%= metaTitle %></title>
+  <meta name="description" content="<%= metaDescription %>" />
+
+  <% if (canonicalUrl) { %>
+    <link rel="canonical" href="<%= canonicalUrl %>" />
+  <% } %>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="<%= site.name %>" />
+  <meta property="og:title" content="<%= metaTitle %>" />
+  <meta property="og:description" content="<%= metaDescription %>" />
+  <% if (canonicalUrl) { %>
+    <meta property="og:url" content="<%= canonicalUrl %>" />
+  <% } %>
+  <% if (pageImage) { %>
+    <meta property="og:image" content="<%= pageImage %>" />
+  <% } %>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= metaTitle %>" />
+  <meta name="twitter:description" content="<%= metaDescription %>" />
+  <% if (pageImage) { %>
+    <meta name="twitter:image" content="<%= pageImage %>" />
+  <% } %>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "IceCreamShop",
+      "name": "<%= site.name %>",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Scherfeder Str. 40",
+        "addressLocality": "Warburg (Rimbeck)",
+        "postalCode": "34414",
+        "addressCountry": "DE"
+      },
+      "telephone": "<%= site.phone %>",
+      "servesCuisine": ["Gelato", "Ice Caffe", "Desserts"]
+    }
+  </script>
+</head>
+<body>

@@ -1,0 +1,19 @@
+{
+  "iceCaffe": [
+    { "name": "Affogato Garda", "desc": "Espresso auf Vanillegelato", "price": "Preis folgt" },
+    { "name": "Ice Latte Vanilla", "desc": "Milch, Espresso, Vanille", "price": "Preis folgt" },
+    { "name": "Cold Brew Tiramisu", "desc": "Kakao, Mascarpone, Kaffee", "price": "Preis folgt" }
+  ],
+  "gelato": [
+    { "name": "Pistazie Bronte", "desc": "Intensiv und nussig", "price": "Preis folgt" },
+    { "name": "Stracciatella", "desc": "Sahnegelato mit Schoko", "price": "Preis folgt" },
+    { "name": "Haselnuss Gianduja", "desc": "Nussig, cremig", "price": "Preis folgt" },
+    { "name": "Erdbeere Garten", "desc": "Fruchtig und frisch", "price": "Preis folgt" }
+  ],
+  "desserts": [
+    { "name": "Spaghetti Ice Classic", "desc": "Vanille, Erdbeersauce, Schoko", "price": "Preis folgt" },
+    { "name": "Spaghetti Ice Berry", "desc": "Beerenmix und Sahne", "price": "Preis folgt" },
+    { "name": "Waffel mit Gelato", "desc": "2 Kugeln nach Wahl", "price": "Preis folgt" },
+    { "name": "Waffel mit Fruechten", "desc": "Saisonale Fruechte", "price": "Preis folgt" }
+  ]
+}
