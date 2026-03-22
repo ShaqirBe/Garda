@@ -3,6 +3,7 @@
 <head>
   <% const metaTitle = pageTitle || `${site.name} - Gelato & Ice Caffe`; %>
   <% const metaDescription = pageDescription || "Familiengemachtes Gelato, Ice Caffe, Spaghetti Ice und Waffeln in Rimbeck / Scherfede."; %>
+  <% const metaImage = typeof pageImage !== 'undefined' ? pageImage : null; %>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#2f1b12" />
@@ -22,15 +23,15 @@
   <% if (canonicalUrl) { %>
     <meta property="og:url" content="<%= canonicalUrl %>" />
   <% } %>
-  <% if (pageImage) { %>
-    <meta property="og:image" content="<%= pageImage %>" />
+  <% if (metaImage) { %>
+    <meta property="og:image" content="<%= metaImage %>" />
   <% } %>
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="<%= metaTitle %>" />
   <meta name="twitter:description" content="<%= metaDescription %>" />
-  <% if (pageImage) { %>
-    <meta name="twitter:image" content="<%= pageImage %>" />
+  <% if (metaImage) { %>
+    <meta name="twitter:image" content="<%= metaImage %>" />
   <% } %>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
