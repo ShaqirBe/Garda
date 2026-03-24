@@ -109,7 +109,7 @@ const site = {
       },
       storyTitle: "Zurueck nach Rimbeck",
       storyIntro:
-        "Die Embeltore war lange im Viertel zuhause und kehrt jetzt mit frischem Raum, neuen Rezepten und derselben Herzlichkeit zurueck. Unser Gelato ist hausgemacht, jedes Dessert frisch gebaut.",
+        "Die Eis Caffe war lange im Viertel zuhause und kehrt jetzt mit frischem Raum, neuen Rezepten und derselben Herzlichkeit zurueck. Unser Gelato ist hausgemacht, jedes Dessert frisch gebaut.",
       storyItems: [
         "Familienrezepte mit Handwerk",
         "Milch und Fruechte aus der Region",
