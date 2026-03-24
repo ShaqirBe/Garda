@@ -9,16 +9,26 @@
   </section>
 
   <div class="menu-tabs" role="tablist" aria-label="Speisekategorien">
-    <button class="tab-btn active" data-target="iceCaffe" role="tab" aria-selected="true" data-i18n="menuPage.tabs.iceCaffe"></button>
-    <button class="tab-btn" data-target="gelato" role="tab" aria-selected="false" data-i18n="menuPage.tabs.gelato"></button>
-    <button class="tab-btn" data-target="desserts" role="tab" aria-selected="false" data-i18n="menuPage.tabs.desserts"></button>
+    <% menu.categories.forEach((category, idx) => { %>
+      <button
+        class="tab-btn <%= idx === 0 ? 'active' : '' %>"
+        data-target="<%= category.key %>"
+        role="tab"
+        aria-selected="<%= idx === 0 ? 'true' : 'false' %>"
+        data-i18n="menuPage.tabs.<%= category.key %>"
+      ></button>
+    <% }) %>
   </div>
 
-  <% const categories = ["iceCaffe", "gelato", "desserts"]; %>
-  <% categories.forEach((key, idx) => { %>
-    <section class="menu-section tab-content <%= idx === 0 ? 'active' : '' %>" id="<%= key %>" role="tabpanel" <%= idx !== 0 ? 'hidden' : '' %>>
-      <h2 data-i18n="menuPage.tabs.<%= key %>"></h2>
-      <% menu[key].forEach(item => { %>
+  <% menu.categories.forEach((category, idx) => { %>
+    <section
+      class="menu-section tab-content <%= idx === 0 ? 'active' : '' %>"
+      id="<%= category.key %>"
+      role="tabpanel"
+      <%= idx !== 0 ? 'hidden' : '' %>
+    >
+      <h2 data-i18n="menuPage.tabs.<%= category.key %>"></h2>
+      <% category.items.forEach(item => { %>
         <div class="menu-item">
           <div class="menu-header">
             <span class="menu-title"><%= item.name %></span>

@@ -62,11 +62,16 @@ const site = {
       menuPage: {
         eyebrow: "Unsere Speisekarte",
         title: "Speisekarte",
-        intro: "Unsere Auswahl an Gelato, Ice Caffe, Spaghetti Ice und Waffeln.",
+        intro: "Gelato, Eisbecher, Spaghetti Ice, Joghurt, Waffeln, Mini-Pizza, Kaffee und Getraenke.",
         tabs: {
-          iceCaffe: "Ice Caffe",
-          gelato: "Gelato",
-          desserts: "Desserts"
+          eisportionen: "Eisportionen",
+          eisbecher: "Eisbecher",
+          spaghetti: "Spaghetti Ice",
+          joghurt: "Joghurt",
+          waffeln: "Waffeln",
+          mini_pizza: "Mini-Pizza",
+          kaffee: "Kaffee",
+          getraenke: "Getraenke"
         }
       },
       contactPage: {
@@ -128,11 +133,16 @@ const site = {
       menuPage: {
         eyebrow: "Our menu",
         title: "Menu",
-        intro: "Gelato, ice caffe, spaghetti ice, and waffle highlights.",
+        intro: "Gelato, ice cups, spaghetti ice, yogurt, waffles, mini pizza, coffee and drinks.",
         tabs: {
-          iceCaffe: "Ice Caffe",
-          gelato: "Gelato",
-          desserts: "Desserts"
+          eisportionen: "Scoops",
+          eisbecher: "Ice cups",
+          spaghetti: "Spaghetti ice",
+          joghurt: "Yogurt",
+          waffeln: "Waffles",
+          mini_pizza: "Mini pizza",
+          kaffee: "Coffee",
+          getraenke: "Drinks"
         }
       },
       contactPage: {

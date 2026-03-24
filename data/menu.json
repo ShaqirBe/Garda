@@ -1,19 +1,209 @@
 {
-  "iceCaffe": [
-    { "name": "Affogato Garda", "desc": "Espresso auf Vanillegelato", "price": "Preis folgt" },
-    { "name": "Ice Latte Vanilla", "desc": "Milch, Espresso, Vanille", "price": "Preis folgt" },
-    { "name": "Cold Brew Tiramisu", "desc": "Kakao, Mascarpone, Kaffee", "price": "Preis folgt" }
-  ],
-  "gelato": [
-    { "name": "Pistazie Bronte", "desc": "Intensiv und nussig", "price": "Preis folgt" },
-    { "name": "Stracciatella", "desc": "Sahnegelato mit Schoko", "price": "Preis folgt" },
-    { "name": "Haselnuss Gianduja", "desc": "Nussig, cremig", "price": "Preis folgt" },
-    { "name": "Erdbeere Garten", "desc": "Fruchtig und frisch", "price": "Preis folgt" }
-  ],
-  "desserts": [
-    { "name": "Spaghetti Ice Classic", "desc": "Vanille, Erdbeersauce, Schoko", "price": "Preis folgt" },
-    { "name": "Spaghetti Ice Berry", "desc": "Beerenmix und Sahne", "price": "Preis folgt" },
-    { "name": "Waffel mit Gelato", "desc": "2 Kugeln nach Wahl", "price": "Preis folgt" },
-    { "name": "Waffel mit Fruechten", "desc": "Saisonale Fruechte", "price": "Preis folgt" }
+  "categories": [
+    {
+      "key": "eisportionen",
+      "items": [
+        {
+          "name": "2 Kugeln",
+          "desc": "Aus unserer Eistheke",
+          "price": "€ 5,30"
+        },
+        {
+          "name": "3 Kugeln",
+          "desc": "Aus unserer Eistheke",
+          "price": "€ 7,30"
+        },
+        {
+          "name": "4 Kugeln",
+          "desc": "Aus unserer Eistheke",
+          "price": "€ 8,90"
+        },
+        {
+          "name": "5 Kugeln",
+          "desc": "Aus unserer Eistheke",
+          "price": "€ 9,49"
+        }
+      ]
+    },
+    {
+      "key": "eisbecher",
+      "items": [
+        {
+          "name": "Fruchtbecher",
+          "desc": "Gemischtes Fruchteis, Sahne, frische Fruechte",
+          "price": "€ 10,49"
+        },
+        {
+          "name": "Erdbeerbecher",
+          "desc": "Eis, frische Erdbeeren, Erdbeersosse",
+          "price": "€ 11,20"
+        },
+        {
+          "name": "Amarena Becher",
+          "desc": "Eis, Amarenakirschen, Amarenasosse",
+          "price": "€ 10,99"
+        },
+        {
+          "name": "Waldbecher",
+          "desc": "Eis, Waldbeeren, Waldbeersosse",
+          "price": "€ 13,89"
+        },
+        {
+          "name": "Schokobecher",
+          "desc": "Eis, Sahne, Schokososse, Raspeln",
+          "price": "€ 10,50"
+        }
+      ]
+    },
+    {
+      "key": "spaghetti",
+      "items": [
+        {
+          "name": "Spaghetti Classico",
+          "desc": "Vanilleeis, Sahne, Erdbeersosse, weisse Raspeln",
+          "price": "€ 10,00"
+        },
+        {
+          "name": "Spaghetti Fragola",
+          "desc": "Vanilleeis, frische Erdbeeren, Erdbeersosse",
+          "price": "€ 10,49"
+        },
+        {
+          "name": "Spaghetti Waldbeere",
+          "desc": "Joghurt-Eis, Waldbeeren, Waldbeersosse",
+          "price": "€ 10,99"
+        },
+        {
+          "name": "Spaghetti Schoko",
+          "desc": "Schokoeis, Schokososse, Crossies",
+          "price": "€ 10,49"
+        }
+      ]
+    },
+    {
+      "key": "joghurt",
+      "items": [
+        {
+          "name": "Joghurt Erdbeere",
+          "desc": "Naturjoghurt, Erdbeeren, Erdbeersosse",
+          "price": "€ 9,99"
+        },
+        {
+          "name": "Joghurt Waldbeere",
+          "desc": "Naturjoghurt, Waldbeeren, Waldbeersosse",
+          "price": "€ 10,99"
+        },
+        {
+          "name": "Joghurt Kiwi",
+          "desc": "Naturjoghurt, Kiwis, Kiwisosse",
+          "price": "€ 9,99"
+        },
+        {
+          "name": "Joghurt Fruechte",
+          "desc": "Naturjoghurt, frische Fruechte, Erdbeersosse",
+          "price": "€ 12,50"
+        }
+      ]
+    },
+    {
+      "key": "waffeln",
+      "items": [
+        {
+          "name": "Waffel Zucker",
+          "desc": "Puderzucker",
+          "price": "€ 3,90"
+        },
+        {
+          "name": "Waffel Vanille",
+          "desc": "Vanilleeis und Vanillesosse",
+          "price": "€ 6,30"
+        },
+        {
+          "name": "Waffel Nutella",
+          "desc": "Nutella, Puderzucker, Vanilleeis",
+          "price": "€ 6,90"
+        },
+        {
+          "name": "Waffel Erdbeere",
+          "desc": "Frische Erdbeeren, Erdbeersosse",
+          "price": "€ 7,90"
+        }
+      ]
+    },
+    {
+      "key": "mini_pizza",
+      "items": [
+        {
+          "name": "Pizza Margherita",
+          "desc": "Tomatensosse, Mozzarella, Oregano",
+          "price": "€ 6,20"
+        },
+        {
+          "name": "Pizza Salami",
+          "desc": "Tomatensosse, Mozzarella, Salami",
+          "price": "€ 6,70"
+        },
+        {
+          "name": "Pizza Tonno",
+          "desc": "Tomatensosse, Mozzarella, Thunfisch",
+          "price": "€ 6,90"
+        },
+        {
+          "name": "Pizza Prosciutto e Funghi",
+          "desc": "Kochhinterschinken, Pilze",
+          "price": "€ 6,90"
+        }
+      ]
+    },
+    {
+      "key": "kaffee",
+      "items": [
+        {
+          "name": "Espresso",
+          "desc": "Klassisch",
+          "price": "€ 2,49"
+        },
+        {
+          "name": "Cappuccino Italiano",
+          "desc": "Normal",
+          "price": "€ 3,85"
+        },
+        {
+          "name": "Latte Macchiato",
+          "desc": "Mit Milch",
+          "price": "€ 4,75"
+        },
+        {
+          "name": "Affogato",
+          "desc": "Espresso mit 1 Kugel Eis",
+          "price": "€ 5,10"
+        }
+      ]
+    },
+    {
+      "key": "getraenke",
+      "items": [
+        {
+          "name": "Cola 0,3l",
+          "desc": "Classic",
+          "price": "€ 3,60"
+        },
+        {
+          "name": "Orangenlimonade 0,3l",
+          "desc": "Spritzig",
+          "price": "€ 3,60"
+        },
+        {
+          "name": "Eistee 0,3l",
+          "desc": "Zitrone oder Pfirsich",
+          "price": "€ 3,10"
+        },
+        {
+          "name": "Tafelwasser 0,3l",
+          "desc": "Still oder sprudel",
+          "price": "€ 2,95"
+        }
+      ]
+    }
   ]
 }
