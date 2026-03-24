@@ -22,6 +22,7 @@ const site = {
       heroIntro:
         "Familiengefuehrtes Gelato-Haus mit starken Aromen, cremiger Textur und einer warmen Kaffeebar. Frische Waffeln, Spaghetti Ice und Ice Caffe wie frueher.",
       heroNote: "Keine Reservierungen. Bestellungen aktuell nur telefonisch.",
+      placeholderPhoto: "Foto folgt",
       highlights: [
         {
           title: "Familiengemachtes Gelato",
@@ -38,6 +39,74 @@ const site = {
       ],
       menuTitle: "Menu-Highlights",
       menuIntro: "Saisonale Sorten wechseln woechentlich. Fragen Sie nach den Specials.",
+      cta: {
+        menu: "Speisekarte ansehen",
+        story: "Mehr erfahren"
+      },
+      featureStrip: [
+        {
+          title: "Premiumeis",
+          desc: "Zartschmelzendes Gelato mit starken Aromen."
+        },
+        {
+          title: "Vegan & Laktosefrei",
+          desc: "Fruchteis und vegane Optionen auf Anfrage."
+        },
+        {
+          title: "Unser Pistazieneis",
+          desc: "Intensiv, nussig und unser Meisterwerk."
+        }
+      ],
+      promoBlocks: [
+        {
+          title: "Gutscheine",
+          desc: "Verschenke Genussmomente fuer Familie und Freunde."
+        },
+        {
+          title: "Eis des Monats",
+          desc: "Saisonale Kreationen, die regelmaessig wechseln."
+        },
+        {
+          title: "Family Specials",
+          desc: "Aktionen fuer Familien und kleine Genussmomente."
+        }
+      ],
+      testimonials: [
+        {
+          name: "Kundin aus Rimbeck",
+          quote: "Sehr leckeres Eis und eine tolle Waffel."
+        },
+        {
+          name: "Stammkunde",
+          quote: "Freundlicher Service und fantastische Portionen."
+        },
+        {
+          name: "Ice Caffe Fan",
+          quote: "Der Affogato ist mein Highlight."
+        }
+      ],
+      testimonialsTitle: "Das sagen Gaeste",
+      testimonialsIntro: "Ein kleiner Einblick in die Stimmung bei uns.",
+      faq: [
+        {
+          q: "Habt ihr vegane Eissorten?",
+          a: "Ja, wir bieten vegane Fruchteissorten an. Frag uns gerne vor Ort."
+        },
+        {
+          q: "Kann ich telefonisch bestellen?",
+          a: "Ja, Bestellungen nehmen wir aktuell nur telefonisch an."
+        },
+        {
+          q: "Habt ihr Spaghetti Ice?",
+          a: "Ja, Spaghetti Ice ist ein fester Bestandteil unserer Karte."
+        }
+      ],
+      faqTitle: "FAQ",
+      newsletter: {
+        title: "Bleib auf dem Laufenden",
+        desc: "Trage Dich ein und erhalte Neuigkeiten zu neuen Sorten.",
+        action: "Anmelden"
+      },
       storyTitle: "Zurueck nach Rimbeck",
       storyIntro:
         "Die Embeltore war lange im Viertel zuhause und kehrt jetzt mit frischem Raum, neuen Rezepten und derselben Herzlichkeit zurueck. Unser Gelato ist hausgemacht, jedes Dessert frisch gebaut.",
@@ -93,6 +162,7 @@ const site = {
       heroIntro:
         "A family gelato house with bold flavors, creamy textures, and a warm coffee bar. Fresh waffle, spaghetti ice, and ice caffe made the way we grew up with.",
       heroNote: "No reservations. Orders by phone for now.",
+      placeholderPhoto: "Photo coming soon",
       highlights: [
         {
           title: "Family-made gelato",
@@ -109,6 +179,74 @@ const site = {
       ],
       menuTitle: "Menu highlights",
       menuIntro: "Seasonal flavors rotate weekly. Ask on the phone for today’s specials.",
+      cta: {
+        menu: "View menu",
+        story: "Learn more"
+      },
+      featureStrip: [
+        {
+          title: "Premium gelato",
+          desc: "Silky texture and bold flavors."
+        },
+        {
+          title: "Vegan & lactose-free",
+          desc: "Fruit-based options on request."
+        },
+        {
+          title: "Pistachio signature",
+          desc: "Intense, nutty, and our masterpiece."
+        }
+      ],
+      promoBlocks: [
+        {
+          title: "Gift cards",
+          desc: "Share a sweet moment with family and friends."
+        },
+        {
+          title: "Flavor of the month",
+          desc: "Seasonal creations that rotate regularly."
+        },
+        {
+          title: "Family specials",
+          desc: "Little highlights for families."
+        }
+      ],
+      testimonials: [
+        {
+          name: "Guest from Rimbeck",
+          quote: "Fantastic gelato and a great waffle."
+        },
+        {
+          name: "Regular customer",
+          quote: "Friendly service and generous portions."
+        },
+        {
+          name: "Ice caffe fan",
+          quote: "The affogato is a favorite."
+        }
+      ],
+      testimonialsTitle: "What guests say",
+      testimonialsIntro: "A quick glimpse of the Garda experience.",
+      faq: [
+        {
+          q: "Do you have vegan options?",
+          a: "Yes, we offer fruit-based vegan gelato. Ask us on site."
+        },
+        {
+          q: "Can I order by phone?",
+          a: "Yes, phone orders only for now."
+        },
+        {
+          q: "Do you serve spaghetti ice?",
+          a: "Yes, spaghetti ice is on our menu."
+        }
+      ],
+      faqTitle: "FAQ",
+      newsletter: {
+        title: "Stay in the loop",
+        desc: "Sign up for updates on new flavors.",
+        action: "Subscribe"
+      },
       storyTitle: "Back to Rimbeck",
       storyIntro:
         "The embeltore served the neighborhood for years and now returns with a refreshed space, new recipes, and the same warm welcome. We make our gelato in-house and build every dessert to order.",

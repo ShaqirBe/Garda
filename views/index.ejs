@@ -9,30 +9,50 @@
       <p class="lead" data-i18n="heroIntro"></p>
       <div class="hero-actions">
         <a class="btn btn-call call-link" href="#" data-i18n="callLabel"></a>
-        <a class="btn btn-ghost" href="#map">Find us</a>
+        <a class="btn btn-ghost" href="/menu" data-i18n="cta.menu"></a>
       </div>
       <p class="note" data-i18n="heroNote"></p>
     </div>
-    <div class="hero-art" data-animate>
-      <div class="orb"></div>
-      <div class="scoop"></div>
-      <div class="tile"></div>
-      <div class="stripe"></div>
+    <div class="hero-media" data-animate>
+      <div class="image-placeholder">
+        <span data-i18n="placeholderPhoto"></span>
+      </div>
     </div>
   </section>
 
-  <section class="highlights" data-animate>
-    <div class="card">
-      <h3 data-i18n="highlights.0.title"></h3>
-      <p data-i18n="highlights.0.desc"></p>
+  <section class="feature-strip" data-animate>
+    <div class="feature-card">
+      <h3 data-i18n="featureStrip.0.title"></h3>
+      <p data-i18n="featureStrip.0.desc"></p>
     </div>
-    <div class="card">
-      <h3 data-i18n="highlights.1.title"></h3>
-      <p data-i18n="highlights.1.desc"></p>
+    <div class="feature-card">
+      <h3 data-i18n="featureStrip.1.title"></h3>
+      <p data-i18n="featureStrip.1.desc"></p>
     </div>
-    <div class="card">
-      <h3 data-i18n="highlights.2.title"></h3>
-      <p data-i18n="highlights.2.desc"></p>
+    <div class="feature-card">
+      <h3 data-i18n="featureStrip.2.title"></h3>
+      <p data-i18n="featureStrip.2.desc"></p>
+    </div>
+  </section>
+
+  <section class="promo-grid" data-animate>
+    <div class="promo-card">
+      <div class="promo-media image-placeholder"><span data-i18n="placeholderPhoto"></span></div>
+      <h3 data-i18n="promoBlocks.0.title"></h3>
+      <p data-i18n="promoBlocks.0.desc"></p>
+      <a class="text-link" href="/kontakt" data-i18n="cta.story"></a>
+    </div>
+    <div class="promo-card">
+      <div class="promo-media image-placeholder"><span data-i18n="placeholderPhoto"></span></div>
+      <h3 data-i18n="promoBlocks.1.title"></h3>
+      <p data-i18n="promoBlocks.1.desc"></p>
+      <a class="text-link" href="/menu" data-i18n="cta.menu"></a>
+    </div>
+    <div class="promo-card">
+      <div class="promo-media image-placeholder"><span data-i18n="placeholderPhoto"></span></div>
+      <h3 data-i18n="promoBlocks.2.title"></h3>
+      <p data-i18n="promoBlocks.2.desc"></p>
+      <a class="text-link" href="/kontakt" data-i18n="cta.story"></a>
     </div>
   </section>
 
@@ -67,6 +87,9 @@
         </ul>
       </div>
     </div>
+    <div class="menu-cta" data-animate>
+      <a class="btn btn-call" href="/menu" data-i18n="cta.menu"></a>
+    </div>
   </section>
 
   <section class="story">
@@ -88,6 +111,58 @@
         <p data-i18n="storyItems.2"></p>
       </div>
     </div>
+  </section>
+
+  <section class="testimonial-section" data-animate>
+    <div class="section-head">
+      <h2 data-i18n="testimonialsTitle"></h2>
+      <p data-i18n="testimonialsIntro"></p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <p data-i18n="testimonials.0.quote"></p>
+        <span data-i18n="testimonials.0.name"></span>
+      </article>
+      <article class="testimonial-card">
+        <p data-i18n="testimonials.1.quote"></p>
+        <span data-i18n="testimonials.1.name"></span>
+      </article>
+      <article class="testimonial-card">
+        <p data-i18n="testimonials.2.quote"></p>
+        <span data-i18n="testimonials.2.name"></span>
+      </article>
+    </div>
+  </section>
+
+  <section class="faq-section" data-animate>
+    <div class="section-head">
+      <h2 data-i18n="faqTitle"></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3 data-i18n="faq.0.q"></h3>
+        <p data-i18n="faq.0.a"></p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.1.q"></h3>
+        <p data-i18n="faq.1.a"></p>
+      </div>
+      <div class="faq-item">
+        <h3 data-i18n="faq.2.q"></h3>
+        <p data-i18n="faq.2.a"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter" data-animate>
+    <div>
+      <h2 data-i18n="newsletter.title"></h2>
+      <p data-i18n="newsletter.desc"></p>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Email" aria-label="Email" />
+      <button type="button" data-i18n="newsletter.action"></button>
+    </form>
   </section>
 
   <section class="opening-hours" aria-labelledby="opening-hours-title">
