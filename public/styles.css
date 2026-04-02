@@ -91,18 +91,15 @@ main:focus {
   gap: 0.8rem;
 }
 
-.mark {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 26px;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--butter), #f9b5a7);
-  color: var(--cocoa);
+.brand-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  object-fit: cover;
   box-shadow: var(--shadow);
+  background: #fff;
+  border: 1px solid rgba(47, 27, 18, 0.12);
+  padding: 4px;
 }
 
 .brand-text {
@@ -648,6 +645,16 @@ main {
 
 .site-footer nav {
   margin-top: 0.35rem;
+}
+
+.footer-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(47, 27, 18, 0.12);
+  background: #fff;
+  padding: 4px;
 }
 
 .site-footer nav a {
