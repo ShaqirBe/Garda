@@ -8,38 +8,45 @@
     <p data-i18n="menuPage.intro"></p>
   </section>
 
-  <div class="menu-tabs" role="tablist" aria-label="Speisekategorien">
-    <% menu.categories.forEach((category, idx) => { %>
-      <button
-        class="tab-btn <%= idx === 0 ? 'active' : '' %>"
-        data-target="<%= category.key %>"
-        role="tab"
-        aria-selected="<%= idx === 0 ? 'true' : 'false' %>"
-        data-i18n="menuPage.tabs.<%= category.key %>"
-      ></button>
-    <% }) %>
-  </div>
+  <section class="menu-document-grid" aria-label="Speisekarten">
+    <article class="menu-document-card">
+      <p class="menu-document-kicker" data-i18n="menuPage.eis.kicker"></p>
+      <h2 data-i18n="menuPage.eis.title"></h2>
+      <p data-i18n="menuPage.eis.desc"></p>
+      <a
+        class="btn btn-call"
+        href="/menus/eiskarte-garda.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="menuPage.openPdf"
+      ></a>
+      <a
+        class="menu-download"
+        href="/menus/eiskarte-garda.pdf"
+        download
+        data-i18n="menuPage.downloadPdf"
+      ></a>
+    </article>
 
-  <% menu.categories.forEach((category, idx) => { %>
-    <section
-      class="menu-section tab-content <%= idx === 0 ? 'active' : '' %>"
-      id="<%= category.key %>"
-      role="tabpanel"
-      <%= idx !== 0 ? 'hidden' : '' %>
-    >
-      <h2 data-i18n="menuPage.tabs.<%= category.key %>"></h2>
-      <% category.items.forEach(item => { %>
-        <div class="menu-item">
-          <div class="menu-header">
-            <span class="menu-title"><%= item.name %></span>
-            <span class="menu-price"><%= item.price %></span>
-          </div>
-          <div class="menu-ingredients"><%= item.desc %></div>
-        </div>
-      <% }) %>
-    </section>
-  <% }) %>
+    <article class="menu-document-card menu-document-card-waffle">
+      <p class="menu-document-kicker" data-i18n="menuPage.waffle.kicker"></p>
+      <h2 data-i18n="menuPage.waffle.title"></h2>
+      <p data-i18n="menuPage.waffle.desc"></p>
+      <a
+        class="btn btn-call"
+        href="/menus/bruesseler-waffeln-garda.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-i18n="menuPage.openPdf"
+      ></a>
+      <a
+        class="menu-download"
+        href="/menus/bruesseler-waffeln-garda.pdf"
+        download
+        data-i18n="menuPage.downloadPdf"
+      ></a>
+    </article>
+  </section>
 </main>
 
-<script src="/js/tabs.js"></script>
 <%- include('partials/footer') %>

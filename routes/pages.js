@@ -1,7 +1,6 @@
 const express = require("express");
 const openingHours = require("../config/openingHours");
 const { formatHoursCards } = require("../utils/isOpenNow");
-const menuData = require("../data/menu.json");
 
 const router = express.Router();
 const SITE_URL = "";
@@ -41,8 +40,7 @@ router.get("/menu", (req, res) => {
   res.render("menu", {
     pageTitle: "Speisekarte | Eiscafe Garda Rimbeck",
     pageDescription: "Unsere aktuelle Eis- und Ice-Caffe Auswahl.",
-    canonicalUrl: SITE_URL ? `${SITE_URL}/menu` : null,
-    menu: menuData
+    canonicalUrl: SITE_URL ? `${SITE_URL}/menu` : null
   });
 });
 

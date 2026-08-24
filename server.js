@@ -9,14 +9,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const site = {
   name: "Eiscafe Garda",
-  phone: "+495642987493",
-  phoneDisplay: "+49 5642 987493",
+  phone: "+4915207625526",
+  phoneDisplay: "+49 1520 7625526",
   address: "Scherfeder Str. 40, 34414 Warburg (Rimbeck)",
   mapQuery: "Eiscafe Garda, Scherfeder Straße 40, 34414 Warburg",
   copy: {
     de: {
       tagline: "Familiengemachtes Gelato & Ice Caffe",
-      statusBadge: "Wiedereroeffnung in Rimbeck / Scherfede",
+      statusBadge: "Täglich 11:00 - 21:00 · Dienstag Ruhetag",
       heroEyebrow: "Rimbeck / Scherfede, Warburg",
       heroTitle: "Ice Caffe mit Familiensoul.",
       heroIntro:
@@ -116,7 +116,7 @@ const site = {
         "Frische Waffeln, Saucen und Toppings taeglich"
       ],
       visitTitle: "Besuchen Sie uns",
-      hoursNote: "Oeffnungszeiten werden bald bekanntgegeben",
+      hoursNote: "Mittwoch bis Montag: 11:00 - 21:00 Uhr · Dienstag: Ruhetag",
       callLabel: "Jetzt anrufen",
       callNote: "Kein Reservierungssystem. Telefonische Bestellung.",
       openingHoursEyebrow: "Oeffnungszeiten",
@@ -131,16 +131,18 @@ const site = {
       menuPage: {
         eyebrow: "Unsere Speisekarte",
         title: "Speisekarte",
-        intro: "Gelato, Eisbecher, Spaghetti Ice, Joghurt, Waffeln, Mini-Pizza, Kaffee und Getraenke.",
-        tabs: {
-          eisportionen: "Eisportionen",
-          eisbecher: "Eisbecher",
-          spaghetti: "Spaghetti Ice",
-          joghurt: "Joghurt",
-          waffeln: "Waffeln",
-          mini_pizza: "Mini-Pizza",
-          kaffee: "Kaffee",
-          getraenke: "Getraenke"
+        intro: "Unsere aktuellen Karten fuer Eis, Eisbecher, Spaghetti Eis, Kaffee und Brüsseler Waffeln.",
+        openPdf: "Speisekarte ansehen",
+        downloadPdf: "PDF herunterladen",
+        eis: {
+          kicker: "9 Seiten",
+          title: "Eiskarte",
+          desc: "Eissorten, Eisportionen, Eisbecher, Spaghetti Eis, Joghurt, Eisgetraenke und Heissgetraenke."
+        },
+        waffle: {
+          kicker: "3 Seiten",
+          title: "Brüsseler Waffeln",
+          desc: "Unsere Auswahl an frisch zubereiteten Waffeln mit Fruechten, Eis, Sahne und Saucen."
         }
       },
       contactPage: {
@@ -156,7 +158,7 @@ const site = {
     },
     en: {
       tagline: "Family-made gelato and ice caffe",
-      statusBadge: "Reopening soon in Rimbeck / Scherfede",
+      statusBadge: "Open daily 11:00 - 21:00 · Closed Tuesdays",
       heroEyebrow: "Rimbeck / Scherfede, Warburg",
       heroTitle: "Ice Caffe with a family soul.",
       heroIntro:
@@ -249,14 +251,14 @@ const site = {
       },
       storyTitle: "Back to Rimbeck",
       storyIntro:
-        "The embeltore served the neighborhood for years and now returns with a refreshed space, new recipes, and the same warm welcome. We make our gelato in-house and build every dessert to order.",
+        "The Eiskafe served the neighborhood for years and now returns with a refreshed space, new recipes, and the same warm welcome. We make our gelato in-house and build every dessert to order.",
       storyItems: [
         "Family recipes and artisan technique",
         "Locally sourced dairy and fruit",
         "Fresh waffle, sauces, and toppings daily"
       ],
       visitTitle: "Visit us",
-      hoursNote: "Hours will be announced soon",
+      hoursNote: "Wednesday to Monday: 11:00 - 21:00 · Tuesday: closed",
       callLabel: "Call to order",
       callNote: "No reservation system. Phone orders only.",
       openingHoursEyebrow: "Opening hours",
@@ -271,16 +273,18 @@ const site = {
       menuPage: {
         eyebrow: "Our menu",
         title: "Menu",
-        intro: "Gelato, ice cups, spaghetti ice, yogurt, waffles, mini pizza, coffee and drinks.",
-        tabs: {
-          eisportionen: "Scoops",
-          eisbecher: "Ice cups",
-          spaghetti: "Spaghetti ice",
-          joghurt: "Yogurt",
-          waffeln: "Waffles",
-          mini_pizza: "Mini pizza",
-          kaffee: "Coffee",
-          getraenke: "Drinks"
+        intro: "Our current menus for gelato, ice cups, spaghetti ice, coffee and Brussels waffles.",
+        openPdf: "View menu",
+        downloadPdf: "Download PDF",
+        eis: {
+          kicker: "9 pages",
+          title: "Gelato menu",
+          desc: "Gelato flavors, portions, ice cups, spaghetti ice, yogurt, cold gelato drinks and hot drinks."
+        },
+        waffle: {
+          kicker: "3 pages",
+          title: "Brussels waffles",
+          desc: "Freshly prepared waffles with fruit, gelato, cream and sauces."
         }
       },
       contactPage: {
