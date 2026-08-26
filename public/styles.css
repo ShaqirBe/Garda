@@ -594,6 +594,135 @@ main {
   font-weight: 700;
 }
 
+.online-menu {
+  margin: 4.5rem 0 1.5rem;
+  scroll-margin-top: 7rem;
+}
+
+.online-menu-heading {
+  max-width: 42rem;
+  padding: clamp(1.5rem, 4vw, 2.6rem);
+  border-radius: var(--radius-lg);
+  color: #fff;
+  background:
+    linear-gradient(125deg, rgba(47, 27, 18, 0.96), rgba(180, 80, 58, 0.88)),
+    url("/images/promo-gelato.jpg") center / cover;
+  box-shadow: var(--shadow);
+}
+
+.online-menu-heading h2,
+.online-menu-section-heading h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 0.95;
+}
+
+.online-menu-heading p:last-child {
+  margin: 1rem 0 0;
+  max-width: 34rem;
+}
+
+.online-menu-nav {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1.25rem 0 2.6rem;
+  padding: 0.2rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.online-menu-nav a {
+  flex: 0 0 auto;
+  padding: 0.6rem 0.95rem;
+  border: 1px solid rgba(47, 27, 18, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--espresso);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.online-menu-nav a:hover {
+  transform: translateY(-2px);
+  background: var(--espresso);
+  color: #fff;
+}
+
+.online-menu-section {
+  scroll-margin-top: 6.5rem;
+  padding: 2.6rem 0;
+  border-top: 1px solid rgba(47, 27, 18, 0.14);
+}
+
+.online-menu-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(16rem, 1.3fr);
+  align-items: end;
+  gap: 0.5rem 2rem;
+  margin-bottom: 1.35rem;
+}
+
+.online-menu-section-heading .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.online-menu-section-heading > p:last-child {
+  margin: 0;
+  color: rgba(47, 27, 18, 0.7);
+}
+
+.online-menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.online-menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 100%;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid rgba(47, 27, 18, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(47, 27, 18, 0.06);
+}
+
+.online-menu-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.online-menu-item p {
+  margin: 0.38rem 0 0;
+  color: rgba(47, 27, 18, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.online-menu-item strong {
+  flex: 0 0 auto;
+  color: var(--cherry);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.online-menu-flavors .online-menu-item {
+  display: block;
+  border-left: 4px solid var(--pistachio);
+}
+
+.online-menu-waffles .online-menu-item {
+  border-left: 4px solid #c67a3c;
+}
+
 .menu-pdf {
   margin: 1.5rem 0 2.5rem;
   background: #fff;
@@ -786,6 +915,19 @@ main {
   }
 
   .menu-document-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online-menu {
+    margin-top: 3.5rem;
+  }
+
+  .online-menu-section-heading {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .online-menu-items {
     grid-template-columns: 1fr;
   }
 

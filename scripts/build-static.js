@@ -4,6 +4,7 @@ const path = require("path");
 
 const openingHours = require("../config/openingHours");
 const { formatHoursCards } = require("../utils/isOpenNow");
+const onlineMenu = require("../data/online-menu");
 const { site } = require("../server");
 
 const root = path.join(__dirname, "..");
@@ -36,7 +37,8 @@ const pages = [
     route: "/menu",
     view: "menu",
     pageTitle: "Speisekarte | Eiscafe Garda Rimbeck",
-    pageDescription: "Unsere aktuelle Eis- und Ice-Caffe Auswahl."
+    pageDescription: "Unsere aktuelle Eis- und Ice-Caffe Auswahl.",
+    onlineMenu
   },
   {
     route: "/kontakt",

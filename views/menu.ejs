@@ -47,6 +47,51 @@
       ></a>
     </article>
   </section>
+
+  <section class="online-menu" aria-labelledby="online-menu-title">
+    <div class="online-menu-heading">
+      <p class="eyebrow">Direkt online</p>
+      <h2 id="online-menu-title">Unsere Speisekarte</h2>
+      <p>
+        Entdecken Sie unsere Auswahl direkt auf der Seite. Alle Preise in Euro.
+        Änderungen und saisonale Verfügbarkeit vorbehalten.
+      </p>
+    </div>
+
+    <nav class="online-menu-nav" aria-label="Kategorien der Speisekarte">
+      <% onlineMenu.forEach((section) => { %>
+        <a href="#<%= section.id %>"><%= section.shortTitle %></a>
+      <% }); %>
+    </nav>
+
+    <% onlineMenu.forEach((section) => { %>
+      <section id="<%= section.id %>" class="online-menu-section">
+        <div class="online-menu-section-heading">
+          <p class="eyebrow"><%= section.kicker %></p>
+          <h2><%= section.title %></h2>
+          <% if (section.note) { %>
+            <p><%= section.note %></p>
+          <% } %>
+        </div>
+
+        <div class="online-menu-items <%= section.layout || "" %>">
+          <% section.items.forEach((item) => { %>
+            <article class="online-menu-item">
+              <div>
+                <h3><%= item.name %></h3>
+                <% if (item.description) { %>
+                  <p><%= item.description %></p>
+                <% } %>
+              </div>
+              <% if (item.price) { %>
+                <strong><%= item.price %></strong>
+              <% } %>
+            </article>
+          <% }); %>
+        </div>
+      </section>
+    <% }); %>
+  </section>
 </main>
 
 <%- include('partials/footer') %>
