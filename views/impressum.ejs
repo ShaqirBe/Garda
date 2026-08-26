@@ -1,15 +1,41 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
 
-<main id="main-content" class="page-shell page">
-  <h1 data-i18n="legalPage.title"></h1>
-  <p data-i18n="legalPage.intro"></p>
+<main id="main-content" class="page-shell legal-page">
+  <section class="legal-intro">
+    <p class="eyebrow">Rechtliche Angaben</p>
+    <h1>Impressum</h1>
+    <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).</p>
+  </section>
 
-  <p>
-    <strong><%= site.name %></strong><br />
-    <%= site.address %><br />
-    Tel: <a href="tel:<%= site.phone %>"><%= site.phoneDisplay %></a>
-  </p>
+  <div class="legal-grid">
+    <section class="legal-card">
+      <h2>Diensteanbieter</h2>
+      <p>
+        <strong><%= site.name %></strong><br />
+        Inhaber: <%= site.owner %><br />
+        <%= site.legalForm %><br />
+        <%= site.address %>
+      </p>
+    </section>
+
+    <section class="legal-card">
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: <a href="tel:<%= site.phone %>"><%= site.phoneDisplay %></a><br />
+        E-Mail: <a href="mailto:<%= site.email %>"><%= site.email %></a>
+      </p>
+    </section>
+
+    <section class="legal-card legal-card-wide">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>
+        Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br />
+        <strong><%= site.owner %></strong><br />
+        <%= site.address %>
+      </p>
+    </section>
+  </div>
 </main>
 
 <%- include('partials/footer') %>

@@ -9,6 +9,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 const site = {
   name: "Eiscafe Garda",
+  owner: "Shaqir Beqiri",
+  legalForm: "Einzelunternehmen",
+  email: "eiscafegardarimbeck@gmail.com",
   phone: "+4915207625526",
   phoneDisplay: "+49 1520 7625526",
   address: "Scherfeder Str. 40, 34414 Warburg (Rimbeck)",
