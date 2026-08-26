@@ -146,15 +146,35 @@
     </div>
   </section>
 
-  <section class="newsletter" data-animate>
-    <div>
-      <h2 data-i18n="newsletter.title"></h2>
-      <p data-i18n="newsletter.desc"></p>
+  <section class="instagram-section" data-animate aria-labelledby="instagram-title">
+    <div class="instagram-copy">
+      <p class="eyebrow" data-i18n="instagram.eyebrow"></p>
+      <h2 id="instagram-title" data-i18n="instagram.title"></h2>
+      <p data-i18n="instagram.desc"></p>
+      <a
+        class="instagram-profile-link"
+        href="<%= site.instagramUrl %>"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1"></circle>
+        </svg>
+        <span><%= site.instagramHandle %></span>
+      </a>
     </div>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Email" aria-label="Email" />
-      <button type="button" data-i18n="newsletter.action"></button>
-    </form>
+
+    <a
+      class="instagram-qr"
+      href="<%= site.instagramUrl %>"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="/images/instagram-qr.png" alt="QR-Code zu Instagram: @garda.eiscafe" />
+      <span data-i18n="instagram.qr"></span>
+    </a>
   </section>
 
   <section class="opening-hours" aria-labelledby="opening-hours-title">

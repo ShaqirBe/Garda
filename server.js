@@ -12,6 +12,8 @@ const site = {
   owner: "Shaqir Beqiri",
   legalForm: "Einzelunternehmen",
   email: "eiscafegardarimbeck@gmail.com",
+  instagramHandle: "@garda.eiscafe",
+  instagramUrl: "https://www.instagram.com/garda.eiscafe/",
   phone: "+4915207625526",
   phoneDisplay: "+49 1520 7625526",
   address: "Scherfeder Str. 40, 34414 Warburg (Rimbeck)",
@@ -109,6 +111,13 @@ const site = {
         title: "Bleib auf dem Laufenden",
         desc: "Trage Dich ein und erhalte Neuigkeiten zu neuen Sorten.",
         action: "Anmelden"
+      },
+      instagram: {
+        eyebrow: "Garda auf Instagram",
+        title: "Folge unseren süßen Momenten.",
+        desc: "Neue Eissorten, frische Waffeln und Einblicke aus dem Eiscafe - direkt aus Rimbeck.",
+        action: "Instagram öffnen",
+        qr: "QR-Code scannen"
       },
       storyTitle: "Zurueck nach Rimbeck",
       storyIntro:
@@ -251,6 +260,13 @@ const site = {
         title: "Stay in the loop",
         desc: "Sign up for updates on new flavors.",
         action: "Subscribe"
+      },
+      instagram: {
+        eyebrow: "Garda on Instagram",
+        title: "Follow our sweet moments.",
+        desc: "New gelato flavors, fresh waffles, and moments from the ice cafe - straight from Rimbeck.",
+        action: "Open Instagram",
+        qr: "Scan the QR code"
       },
       storyTitle: "Back to Rimbeck",
       storyIntro:
