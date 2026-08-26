@@ -7,8 +7,8 @@ module.exports = [
     note: "Weitere Sorten bieten wir je nach Saison an.",
     layout: "online-menu-flavors",
     items: [
-      { name: "Milcheis", description: "Vanille, Schokolade, Amarena, Stracciatella, Haselnuss, Walnuss, Malaga, Mocca, Pistazie und Joghurt" },
-      { name: "Fruchteis", description: "Erdbeer, Himbeer, Zitrone, Heidelbeer, Ananas, Melone, Banane, Kiwi und Aprikose" }
+      { name: "Milcheis", description: "Vanille, Schokolade, Amarena, Stracciatella, Haselnuss, Cookie, Snickers, Pistazie und Joghurt" },
+      { name: "Fruchteis", description: "Erdbeer, Zitrone, Mango, Melone und Banane" }
     ]
   },
   {
