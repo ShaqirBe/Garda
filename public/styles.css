@@ -74,6 +74,38 @@ main:focus {
   border-bottom: 1px solid rgba(47, 27, 18, 0.1);
 }
 
+.holiday-notice {
+  color: #fff;
+  background: linear-gradient(100deg, var(--espresso), #75402d 62%, var(--cherry));
+}
+
+.holiday-notice-inner {
+  width: min(1120px, 92vw);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0 auto;
+  padding: 0.55rem 0;
+}
+
+.holiday-notice-label {
+  flex: 0 0 auto;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.holiday-notice p {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
 .site-header-inner {
   width: min(1120px, 92vw);
   margin: 0 auto;
@@ -1020,6 +1052,10 @@ main {
 }
 
 @media (max-width: 900px) {
+  .holiday-notice-inner {
+    align-items: flex-start;
+  }
+
   .site-header-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -1032,6 +1068,19 @@ main {
 }
 
 @media (max-width: 768px) {
+  .holiday-notice-inner {
+    gap: 0.55rem;
+    padding: 0.5rem 0;
+  }
+
+  .holiday-notice-label {
+    margin-top: 0.05rem;
+  }
+
+  .holiday-notice p {
+    font-size: 0.76rem;
+  }
+
   .hero {
     padding-top: 60px;
   }
